@@ -1,0 +1,20 @@
+.product-card {
+    width: 400px;
+    height: 575px;
+    flex: 0 1 calc(25% - 1em);
+    margin-bottom: 2em;
+}
+
+/* .product-card {
+    color: #1D1D25;
+} */
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 75px 50px 75px 100px;
+}
+
