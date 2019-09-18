@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  showFiller : boolean = false;
+  collapsed = true;
 
-  constructor() { }
+  @Input() title: string;
+
+  toggleCollapse() : void {
+    this.collapsed = !this.collapsed;
+  }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

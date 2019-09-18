@@ -1,1 +1,31 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black !important">
+    <a class="navbar-brand" href="#">
+        <img src='../../assets/images/logo.png' class="img-responsive" alt="NeverThrottled Logo">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="collapsed = !collapsed" data-toggle="collapsed">
+        <span class="navbar-toggler-icon" ngToggler></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="collapsed">
+        <ul class="navbar-nav">
+            <li [ngClass]="{'nav-item active': this.title==='Home'}">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li [ngClass]="{'nav-item active': this.title==='Shop'}">
+                <a class="nav-link" href="/">Shop</a>
+            </li>
+            
+            <li [ngClass]="{'nav-item active': this.title==='About Us'}">
+                <a class="nav-link" href="/aboutus">About Us</a>
+            </li>
+            
+            <li [ngClass]="{'nav-item active': this.title==='Log In'}">
+                <a class="nav-link" href="/login">Log In</a>
+            </li>
+            
+            <li [ngClass]="{'nav-item active': this.title==='Sign Up'}">
+                <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+        </ul>
+    </div> 
+</nav>

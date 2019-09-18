@@ -8,10 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ProductService } from './product.service';
 import { ProductComponent } from './components/product/product.component';
-import { MatToolbarModule, MatSelectModule, MatIcon, MatButtonModule, MatDividerModule, MatSnackBarModule, MatTableModule, MatOptionModule, MatCardModule, MatListModule} from '@angular/material';
+import { MatToolbarModule, MatSelectModule, MatIcon, MatButtonModule, MatDividerModule, MatIconModule, MatSnackBarModule, MatTableModule, MatOptionModule, MatCardModule, MatListModule, MatSidenavModule, MatDrawerContainer} from '@angular/material';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { AboutusComponent } from './shared/aboutus/aboutus.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { AboutusComponent } from './shared/aboutus/aboutus.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSidenavModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
@@ -34,8 +37,10 @@ import { AboutusComponent } from './shared/aboutus/aboutus.component';
     MatDividerModule,
     MatSnackBarModule,
     MatOptionModule,
-    MatListModule
-  ],
+    MatListModule,
+    MatIconModule,
+    NgbModule
+      ],
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
