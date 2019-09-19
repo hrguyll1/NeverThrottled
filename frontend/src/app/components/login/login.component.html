@@ -1,0 +1,87 @@
+<app-header title="Log In"></app-header>
+<div class="login-card">
+    <mat-tab-group>
+        <mat-tab label="Login">
+            <div class="login-tabs">
+                <mat-card *ngIf="notLoggedIn">
+
+                    <mat-card-content>
+                        <form class="example-form">
+                            <table class="example-full-width" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Username" [(ngModel)]="username"
+                                                name="username" required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Password" [(ngModel)]="password"
+                                                type="password" name="password" required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-raised-button (click)="login()" color="primary">Login</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+        </mat-tab>
+        <mat-tab label="Signup">
+            <div class="login-tabs">
+                <mat-card *ngIf="notLoggedIn">
+                    <mat-card-content>
+                        <form class="example-form">
+                            <table class="example-full-width" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <mat-form-field>
+                                            <input matInput placeholder="Username" [(ngModel)]="username"
+                                                name="username" required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field>
+                                            <input matInput placeholder="Email" [(ngModel)]="email" name="email"
+                                                required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field>
+                                            <input matInput placeholder="Confirm Email" [(ngModel)]="confirmEmail"
+                                                name="confirmEmail" required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Password" [(ngModel)]="password"
+                                                type="password" name="password" required>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-raised-button (click)="signUp()" color="primary">Sign Up</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
