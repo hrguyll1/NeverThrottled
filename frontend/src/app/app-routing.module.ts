@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './components/user/user.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: '/aboutus', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: '', component: ProductComponent},
   {path: 'login', component: LoginComponent},
   {path: 'user', component: UserComponent},
+  {path: 'product/:id', component: ProductPageComponent},
   {path: '**', redirectTo: '/', pathMatch:'full'}
 ];
 

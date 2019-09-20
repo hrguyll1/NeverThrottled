@@ -1,0 +1,7 @@
+<app-header title="Shop"></app-header>
+<mat-card *ngIf="product != null">
+    <mat-card-header> {{ product.name }} </mat-card-header>
+    <mat-card-content> 
+        {{ product.description }}
+    </mat-card-content>
+</mat-card>

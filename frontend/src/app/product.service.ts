@@ -18,7 +18,8 @@ export class ProductService {
   }
 
   //Retrieving one single product by _id
-  getProductById(id) {
+  getProductById(id : String) {
+    console.log("tryna get by id", id);
     return this.http.get(`${this.uri}/product/${id}`)
   }
 

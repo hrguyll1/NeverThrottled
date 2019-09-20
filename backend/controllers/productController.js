@@ -27,8 +27,9 @@ function getAllProducts(req, res) {
 //RETRIEVE single product by ID
 function getProduct(req, res) {
     var product = new Product();
-
-    Product.findById(req.params.productId, function(err, products) {
+    console.log("req.params");
+    console.log(req.params);
+    Product.findById(req.params.id, function(err, products) {
         err ? res.json(err) : res.json({status: "success", data: products});
     });
 }

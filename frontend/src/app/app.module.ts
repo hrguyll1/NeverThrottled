@@ -17,6 +17,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './components/user/user.component';
 import { FormsModule } from '@angular/forms';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     AboutusComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 .product-card {
-    width: 400px;
-    height: 575px;
+    /* width: 400px;
+    height: 400px; */
+    max-width: 400px;
     flex: 0 1 calc(25% - 1em);
     margin-bottom: 2em;
 }
@@ -18,3 +19,16 @@
     padding: 75px 50px 75px 100px;
 }
 
+.mat-card-image {
+    height: 200px;
+}
+
+.mat-card-actions {
+    padding-bottom: 50px;
+
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+}

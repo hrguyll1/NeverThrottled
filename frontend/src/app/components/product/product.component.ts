@@ -13,12 +13,20 @@ export class ProductComponent implements OnInit {
   products: Product[];
   displayedColumns = ['name', 'price', 'image'];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit() {
     this.fetchProducts();
   }
 
+  navigate(product: Product, productId : String) {
+    this.router.navigateByUrl('product/' + productId);
+  }
+
+  addToCart() {
+    
+  }
+  
   fetchProducts() {
     var data: {status?: string; data?: []};
     this.productService

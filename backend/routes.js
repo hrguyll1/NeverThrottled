@@ -15,7 +15,7 @@ router.route('/user/:id')
 router.route('/products')
     .get(productController.getAllProducts)
     .post(productController.newProduct)
-router.route('products')
+router.route('/product/:id')
     .get(productController.getProduct)
     .put(productController.updateProduct)
 
