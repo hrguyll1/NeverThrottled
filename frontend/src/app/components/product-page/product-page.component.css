@@ -4,3 +4,20 @@ mat-card-header {
     font-weight: bold;
     padding: 10px;
 }
+
+.mat-card-image {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 50px;
+}
+
+mat-grid-list {
+    margin: 50px;
+}
+
+mat-grid-tile-header {
+    background-color: #673AB7 !important;
+}
+.mat-raised-button {
+    margin: 20px;
+}

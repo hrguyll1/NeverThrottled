@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ProductService } from './product.service';
 import { ProductComponent } from './components/product/product.component';
-import { MatToolbarModule, MatSelectModule, MatIcon, MatButtonModule, MatDividerModule, MatIconModule, MatSnackBarModule, MatTableModule, MatOptionModule, MatCardModule, MatListModule, MatSidenavModule, MatDrawerContainer, MatMenuModule, MatSpinner, MatProgressSpinnerModule, MatFormFieldModule, MatInputModule, MatTabsModule} from '@angular/material';
+import { MatToolbarModule, MatSelectModule, MatIcon, MatButtonModule, MatDividerModule, MatIconModule, MatSnackBarModule, MatTableModule, MatOptionModule, MatCardModule, MatListModule, MatSidenavModule, MatDrawerContainer, MatMenuModule, MatSpinner, MatProgressSpinnerModule, MatFormFieldModule, MatInputModule, MatTabsModule, MatGridListModule} from '@angular/material';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
@@ -45,6 +45,7 @@ import { ProductPageComponent } from './components/product-page/product-page.com
     MatSnackBarModule,
     MatOptionModule,
     MatListModule,
+    MatGridListModule,
     MatIconModule,
     MatMenuModule,
     MatProgressSpinnerModule,
